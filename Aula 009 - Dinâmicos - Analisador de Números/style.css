@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(71, 142, 238);
+    font: normal 15pt;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px black;
+
+}  
+
+div {
+    
+    padding:3px;
+    margin: 20px;
+    margin-left: -1px;
+}
+
+
+
+select#select {
+    width: 200px;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
