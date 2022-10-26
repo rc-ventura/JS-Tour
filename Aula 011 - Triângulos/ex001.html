@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>Ufsc003</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Triângulos </h1>
+
+    </header>
+    <section>
+            <div>
+                
+                <label for="triângulo">Escolha valores para A,B,C e verifique se podemos formar um triângulo.  </label>
+                <br>
+                <br>
+                <br> 
+            
+                   <strong>Lado A </strong> 
+                    <input class="input" type="text" name="ladoA" id="ladoA" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+            
+                    <br>
+                    <br>
+                <strong>Lado B </strong> 
+                <input class="input" type="text" name="ladoB" id="ladoB" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+                
+                <br>
+                <br>
+
+                <strong>Lado C </strong> 
+                <input class="input" type="text" name="ladoC" id="ladoC" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+            
+                        <input type="button" value="Verificar" onclick="verificar()"> </div>
+           
+           
+                    <br>
+                    <br>
+            
+            <div id="resultado">
+                
+               <p>Preencha os dados acima para ver o resultado </p>
+            
+            
+            </div>
+    </section> 
+   
+    <footer>
+
+        <p>&copy; Site Criado por <a href="http://github.com/rc-ventura">Rafael Ventura</a></p>
+    </footer>
+
+</body>
+
+
+</html>

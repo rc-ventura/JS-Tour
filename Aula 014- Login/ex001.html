@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>Ufsc003</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manipulando Arrays </h1>
+
+    </header>
+    <section>
+            <div>
+                
+                <label for="multiplos"> Escolha a  quantidade de números.  </label>
+                <br>
+                <label for="">Escolha dois números para iniciar e finalizar uma sequência.</label>
+                <br>
+                <br>
+                
+                <p><label for="multiplos">Quantidade = 100 || Valor Mínimo = 1 || Valor Máximo = 100 </label> </p>
+                
+                <br> 
+            
+                   <strong>Quantidade </strong> 
+                    <input class="input" type="text" name="dis" id="qtd" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+            
+                    <br>
+                    <br>
+                <strong>valor mínímo </strong> 
+                <input class="input" type="text" name="dis" id="min" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+                
+                <br>
+                <br>
+
+                <strong>valor máximo </strong> 
+                <input class="input" type="text" name="dis" id="max" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+            
+                        <input type="button" value="Verificar" onclick="criarArray()"> </div>
+           
+           
+                    <br>
+                    <br>
+            
+            <div id="resultado">
+                
+               <p>Preencha os dados acima para ver o resultado </p>
+            
+            
+            </div>
+    </section> 
+   
+    <footer>
+
+        <p>&copy; Site Criado por <a href="http://github.com/rc-ventura">Rafael Ventura</a></p>
+    </footer>
+
+</body>
+
+    <script src="script.js"></script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gasto de Combustível</h1>
+
+    </header>
+    <section>
+            <div>
+                <strong>Distância</strong>
+                <input type="number" name="dis" id="dis" min="1" max="5000"> Km
+
+                <br>
+                <br>
+
+                <p><strong> Consumo: </strong>
+
+                    <input type="number" name="con" id="con" min="1" max="100"> Km/l
+                
+                    
+                </p> <br>
+                    <p><strong>Preço da Gasolina:</strong>
+
+                        <input type="number" name="preco" id="preco" min="1" max="10"> Reais
+                    
+
+                    </p>                    
+                    <br>
+                    <p>
+                        <input type="button" value="Verificar" onclick="verificar()"></p>
+            </div>
+            
+            <div id="resultado"> Preencha os dados acima para ver o resultado</div>
+    </section> 
+    <footer>
+
+        <p>&copy; Site Criado por <a href="http://github.com/rc-ventura">Rafael Ventura</a></p>
+    </footer>
+</body>
+    <script src="script.js"></script>
+
+</html>
