@@ -4,7 +4,7 @@
 
 Neste repositório posto alguns exercícios criados em um componente Java Script , HTML, CSS. 
 
-A ideia é aqui é que eu continue a desenvolver as componentes trazendo novas funcionalidades.
+A ideia é continuar a desenvolver as componentes trazendo novas funcionalidades.
 
 
 
