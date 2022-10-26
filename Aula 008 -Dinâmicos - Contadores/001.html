@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>Ufsc003</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar </h1>
+
+    </header>
+    <section>
+            <div>
+                
+                <label for="inicio">Escolha valores para início e final de uma sequência de números .  </label> 
+                <p></p><label for="pulo">Escolha um valor para a contagem em saltos.  </label> </p>
+                <br>
+                <br>
+            
+            
+                   <strong>Início </strong> 
+                    <input class="input" type="text" name="inicio" id="inicio" placeholder="seu número de início" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+            
+                    <br>
+                    <br>
+                <strong>Final </strong> 
+                <input class="input" type="text" name="final" id="final" min="1" placeholder="seu número final" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+                
+                <br>
+                <br>
+
+                <strong>Passo </strong> 
+                <input class="input" type="text" name="passo" id="passo" min="1" placeholder="quantos saltos?" max="100" onkeypress="return somenteNumeros(event)"> 
+                
+            
+                       <p> <input type="button" value="Contar" onclick="verificar()"> </p> </div>
+           
+           
+                <br>
+            <div id="resultado">
+                
+               <p>Preencha os dados acima para ver o resultado ... </p>
+            
+            
+            </div>
+    </section> 
+   
+    <footer>
+
+        <p>&copy; Site Criado por <a href="http://github.com/rc-ventura">Rafael Ventura</a></p>
+    </footer>
+
+</body>
+
+    <script src="script.js"></script>
+
+</html>
