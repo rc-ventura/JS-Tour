@@ -10,50 +10,49 @@
 </head>
 <body>
     <header>
-        <h1>Manipulando Arrays </h1>
+        <h1>Login </h1>
 
     </header>
     <section>
-            <div>
+            <div id="noLogin" >
                 
-                <label for="multiplos"> Escolha a  quantidade de números.  </label>
-                <br>
-                <label for="">Escolha dois números para iniciar e finalizar uma sequência.</label>
-                <br>
-                <br>
                 
-                <p><label for="multiplos">Quantidade = 100 || Valor Mínimo = 1 || Valor Máximo = 100 </label> </p>
-                
-                <br> 
+                    <br>
+                    <br>
             
-                   <strong>Quantidade </strong> 
-                    <input class="input" type="text" name="dis" id="qtd" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                    <strong>Usuário </strong> 
+                    <input class="input" type="text" name="dis" id="username" min="1" max="100"> 
             
                     <br>
                     <br>
-                <strong>valor mínímo </strong> 
-                <input class="input" type="text" name="dis" id="min" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                <strong>Senha </strong> 
+                <input class="input" type="password" name="dis" id="password" min="1" max="100"> 
                 
-                
-                <br>
-                <br>
+                    
+                 <input type="button" value="Logar" onclick="logar()"> </div>
+                    <br>
+                    <br>
 
-                <strong>valor máximo </strong> 
-                <input class="input" type="text" name="dis" id="max" min="1" max="100" onkeypress="return somenteNumeros(event)"> 
+                    <div> 
+
+                        <strong>Novo Usuário </strong> 
+                        <input class="input" type="text" name="" id="newUser">
+                        <br>
+                        <br>
+                       <strong>Nova Senha </strong> <input type="password" name="newPassword" id="newPassword">
+                       <input type="button" value="Criar" onclick="criarUsuarioNovo()">
+
+
+                    </div>
+            
+            <div id="mensagem">
                 
-            
-                        <input type="button" value="Verificar" onclick="criarArray()"> </div>
-           
-           
-                    <br>
-                    <br>
-            
-            <div id="resultado">
-                
-               <p>Preencha os dados acima para ver o resultado </p>
-            
-            
+                    
             </div>
+
+            <div id="yesLogin" style="visibility:hidden"> <div>Logado</div> <button onclick="deslogar()">Deslogar</button> </div>
+            
+
     </section> 
    
     <footer>

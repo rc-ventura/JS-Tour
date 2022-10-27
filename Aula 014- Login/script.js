@@ -1,33 +1,76 @@
-//function verificar( min, max){
-
-  /*  Pegar os lados no input 
-  
-   conveter pra inteiro 
-   
-   fazer uma verificação para saber se pode ser triângulo 
-   
-   se SIM segundo verificação testar para ver se é um trinagulo* é equilatero?/ é isoceles é escaleno 
-
-    resultado =   è um traingulo (tipo)
 
 
-    Se não for alert dizendo que não é triangulo 
 
 
-    function verificaTriangulo() {
-  lado1 = Number(document.getElementById("lado1").value);
-  lado2 = Number(document.getElementById("lado2").value);
-  lado3 = Number(document.getElementById("lado3").value);
+function islogado (){   //funcao que cria um storage login ( Está Logado Sim ou Não)
+  return window.localStorage.getItem("login")
 
-  let resposta = "";
-  if (lado1 == lado2 && lado2 == lado3) {
-    resposta = "equilatero";
-  } else {
-    if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3) {
-      resposta = "escaleno";
-    } else {
-      resposta = "isosceles";
-    }
+}
+
+
+function deslogar () {
+
+noLoginUser= document.getElementById("noLogin")
+yesLoginUser =  document.getElementById("yesLogin")
+
+window.localStorage.removeItem("login")
+noLoginUser.style.visibility = "visible"
+yesLoginUser.style.visibility = "hidden"
+
+}
+
+
+function logar () {
+
+  noLoginUser = document.getElementById("noLogin")
+  yesLoginUser = document.getElementById("yesLogin")
+  let username = document.getElementById("username").value
+  let password = document.getElementById("password").value
+
+  let users = []
+
+  if(window.localStorage.getItem("users")) {
+  users = JSON.parse(window.localStorage.getItem("users")) 
+}
+
+  for (let i =0; i < users.length; i++) {
+
+    if (users[i].username == username &&  users[i].password == password){
+
+      window.localStorage.setItem("login", document.getElementById("username").value)
+    
+
+    noLoginUser.style.visibility = "hidden"
+    yesLoginUser.style.visibility = "visible"
+    break
   }
-  alert("esse triangulo eh: " + resposta);
-} */
+  
+  }
+
+}
+
+function criarUsuarioNovo() {
+
+  let username = document.getElementById("newUser").value
+  let password = document.getElementById("newPassword").value
+  let mensagem = document.getElementById("mensagem")
+  let users = []
+
+  if ( window.localStorage.getItem("users)")){
+
+    users = JSON.parse(window.localStorage.getItem("users"))
+  
+  
+  }
+
+  users.push({username: username, password: password})
+  window.localStorage.setItem("users", JSON.stringify(users))
+  mensagem.innerHTML += "<div> Usuário Criado </div>" 
+  //mensagem.innerHTML = ""
+
+
+
+
+
+
+}
