@@ -1,0 +1,66 @@
+Atvidade Extra 1 :
+
+
+Fazer um software que simule um lançamento de um dado 1000x
+
+
+
+
+Necessito primeiro encontrar alguma função que gere números aleatórios 
+
+
+
+depois faço um laço de repetição com o while para lançar 1000x com um contador 
+
+
+while > count { 
+
+// a função de lançamento 
+
+
+
+
+Crie um lançador com a função 
+
+match.random 
+
+= gera núemeros de 0 até 1.
+
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Apostila JavaScript Progressivo</title>
+ </head>
+ <body>
+ <button onclick="jogar()">Lançar Dados</button><br />
+ Sorteado: <div id="resp"></div>
+
+ <script type="text/javascript">
+  function jogar()
+  {
+    var resp = document.getElementById('resp');
+    resp.innerHTML = Math.floor( 1 + 6*Math.random() );
+  }
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
+Atividade Extra 2 : implementar um orientação a objetos do exercício anterior ..
+
+utilizar classes para implementar o exemplo do lançamento do dado.
+
+
+
+
+
+
+
+
+

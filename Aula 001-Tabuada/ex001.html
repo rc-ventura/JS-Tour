@@ -10,7 +10,17 @@
     <title>Tabuada</title>
 
 
+                <!-- Estrutura 
+                
+                head
+                body
 
+                header
+                section or article
+                    div or span
+                
+                footer
+                -->
 </head>
 
 
@@ -49,23 +59,25 @@ Número <input type="number" name="num" id="num">
                  var num = Number(document.getElementById("num").value)
                  var tab = document.getElementById("seltab")
                  
-                 if(num == 0) {
+                 if(num == 0) {                     //verificação de campo nulo
                     alert ("Por favor, digite um número  válido!")
                     
                 
                  } else {
                 
-                tab.innerHTML = ""
+                tab.innerHTML = ""      // limpando o HTML id "seltab"            
                 for (var count=1; count <= 10; count ++) {
                  
-                let item = document.createElement ("option")
+                let item = document.createElement ("option")        //criar um elemento novo chamado option
                  item.text = `${num} X ${count} = ${num *count} `
                  item.value = `tab${count}` 
-                 tab.appendChild(item)
+                 tab.appendChild(item)                          //implementar o elemento novo
+
+                 
                  
                 }
-                
             }
+            
                 
                     
                   //  tabuada += num + "x" + count + " = " + num*count + "<br/>"  

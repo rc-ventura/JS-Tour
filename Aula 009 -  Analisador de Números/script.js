@@ -43,8 +43,8 @@ function adicionar() {
         alert("Valor inválido ou já encontrado na lista")
     }
 
-    num.value = ""
-    num.focus()
+    num.value = ""              //limpa o numero no input
+    num.focus()                 // coloca foco no numero no inout
 
 
 }
