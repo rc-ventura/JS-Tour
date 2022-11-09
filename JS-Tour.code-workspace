@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Curso em Video/JS-GG/JS-Tour"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS-Tour"
+	}
+}
